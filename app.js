@@ -161,6 +161,7 @@ window.onload = function () {
     // phát nhạc
     function tryPlayAudio() {
         if (!isAudioStarted) {
+            audio.currentTime = 17;
             audio.play().then(() => {
                 isAudioStarted = true;
                 console.log('Audio started automatically');
